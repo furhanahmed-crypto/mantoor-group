@@ -95,6 +95,25 @@
   font-weight: 500;
 }
 .inner-hero-meta i { color: var(--color-gold-lt); font-size: 0.85rem; }
+.inner-hero-meta .rera-link {
+  color: var(--color-gold-lt);
+  text-decoration: underline;
+  font-weight: 500;
+}
+.inner-hero--light .inner-hero-meta .rera-link {
+  color: #A69080;
+}
+.highlight-item .rera-link {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.highlight-item .rera-link:hover {
+  color: var(--color-primary-dark, #1a4060);
+}
 
 /* ─── INNER HERO — LIGHT VARIANT (Upcoming / Completed) ─── */
 /* Base color: #A69080 (warm taupe). Tints derived: 90%→#EEE7E2, 70%→#D4C5BB, full→#A69080 */
