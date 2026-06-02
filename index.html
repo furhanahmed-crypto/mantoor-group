@@ -1,620 +1,964 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mantoor Group | Premium Villa Living in Hyderabad</title>
-  <meta name="description" content="Mantoor Group builds thoughtfully designed duplex & triplex villas for modern family living across Hyderabad. 15+ years of excellence, 3200+ happy families." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mantoor Group | Premium Villa Living in Hyderabad</title>
+    <meta
+      name="description"
+      content="Mantoor Group builds thoughtfully designed duplex & triplex villas for modern family living across Hyderabad. 15+ years of excellence, 3200+ happy families."
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/png" href="images/mantoor-logo.png" />
-</head>
-<body>
-
-  <!-- ═══════════════════════════════════════════════
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/mantoor-logo.png" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════════
        FLOATING NAVBAR
   ═══════════════════════════════════════════════ -->
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="images/mantoor-logo.png" alt="Mantoor Group" />
-      </a>
-      <nav class="nav-links-desktop">
-        <a href="index.html">Home</a>
-        <div class="nav-dropdown">
-          <a href="#projects">Projects <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="pages/ongoing.html">Ongoing Projects</a>
-            <a href="pages/upcoming.html">Upcoming Projects</a>
-            <a href="pages/completed.html">Completed Projects</a>
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="images/mantoor-logo.png" alt="Mantoor Group" />
+        </a>
+        <nav class="nav-links-desktop">
+          <a href="index.html">Home</a>
+          <div class="nav-dropdown">
+            <a href="#projects">Projects <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="pages/ongoing.html">Ongoing Projects</a>
+              <a href="pages/upcoming.html">Upcoming Projects</a>
+              <a href="pages/completed.html">Completed Projects</a>
+            </div>
           </div>
-        </div>
-        <a href="pages/about.html">About</a>
-        <a href="pages/contact.html">Contact</a>
-      </nav>
-      <a href="tel:+919719715225" class="nav-cta">Talk to Us</a>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
-        <span></span><span></span><span></span>
+          <a href="pages/about.html">About</a>
+          <a href="pages/contact.html">Contact</a>
+        </nav>
+        <a href="tel:+919719715225" class="nav-cta">Talk to Us</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Slide-in Menu -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" id="mobileClose">
+        <i class="fas fa-times"></i>
       </button>
-    </div>
-  </header>
+      <div class="mobile-logo">
+        <img src="images/mantoor-logo.png" alt="Mantoor Group" />
+      </div>
+      <ul>
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li class="mobile-dropdown-parent">
+          <button class="mobile-dropdown-toggle">
+            Projects <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul class="mobile-dropdown">
+            <li>
+              <a href="pages/ongoing.html" class="mobile-link"
+                >Ongoing Projects</a
+              >
+            </li>
+            <li>
+              <a href="pages/upcoming.html" class="mobile-link"
+                >Upcoming Projects</a
+              >
+            </li>
+            <li>
+              <a href="pages/completed.html" class="mobile-link"
+                >Completed Projects</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="pages/about.html" class="mobile-link">About</a></li>
+        <li><a href="pages/contact.html" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="tel:+919719715225" class="btn-primary">Call Us Now</a>
+        <a
+          href="https://wa.me/919719715225"
+          target="_blank"
+          class="btn-whatsapp"
+          ><i class="fab fa-whatsapp"></i> WhatsApp</a
+        >
+      </div>
+    </nav>
 
-  <!-- Mobile Slide-in Menu -->
-  <div class="mobile-overlay" id="mobileOverlay"></div>
-  <nav class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
-    <div class="mobile-logo">
-      <img src="images/mantoor-logo.png" alt="Mantoor Group" />
-    </div>
-    <ul>
-      <li><a href="index.html" class="mobile-link">Home</a></li>
-      <li class="mobile-dropdown-parent">
-        <button class="mobile-dropdown-toggle">Projects <i class="fas fa-chevron-down"></i></button>
-        <ul class="mobile-dropdown">
-          <li><a href="pages/ongoing.html" class="mobile-link">Ongoing Projects</a></li>
-          <li><a href="pages/upcoming.html" class="mobile-link">Upcoming Projects</a></li>
-          <li><a href="pages/completed.html" class="mobile-link">Completed Projects</a></li>
-        </ul>
-      </li>
-      <li><a href="pages/about.html" class="mobile-link">About</a></li>
-      <li><a href="pages/contact.html" class="mobile-link">Contact</a></li>
-    </ul>
-    <div class="mobile-menu-footer">
-      <a href="tel:+919719715225" class="btn-primary">Call Us Now</a>
-      <a href="https://wa.me/919719715225" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-    </div>
-  </nav>
-
-  <!-- ═══════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════
        SECTION 1: HERO — CAROUSEL
   ═══════════════════════════════════════════════ -->
-  <section class="hero-carousel" id="home">
-    <div class="hc-slides">
-      <div class="hc-slide active"
-           data-desktop="images/banners/system/muk website.png"
-           data-mobile="images/banners/mobile/muk.png">
-        <img class="hc-slide-img" src="images/banners/system/muk website.png" alt="Mantoor Group Banner" />
+    <section class="hero-carousel" id="home">
+      <div class="hc-slides">
+        <div
+          class="hc-slide active"
+          data-desktop="images/banners/system/muk website.png"
+          data-mobile="images/banners/mobile/muk.png"
+        >
+          <img
+            class="hc-slide-img"
+            src="images/banners/system/muk website.png"
+            alt="Mantoor Group Banner"
+          />
+        </div>
+        <div
+          class="hc-slide"
+          data-desktop="images/banners/system/Wadakpally (1).png"
+          data-mobile="images/banners/mobile/wadakaplly.png"
+        >
+          <img
+            class="hc-slide-img"
+            src="images/banners/system/Wadakpally (1).png"
+            alt="Mantoor Group Banner"
+          />
+        </div>
+        <div
+          class="hc-slide"
+          data-desktop="images/banners/system/Chitkul (1).png"
+          data-mobile="images/banners/mobile/chitkull.png"
+        >
+          <img
+            class="hc-slide-img"
+            src="images/banners/system/Chitkul (1).png"
+            alt="Mantoor Group Banner"
+          />
+        </div>
       </div>
-      <div class="hc-slide"
-           data-desktop="images/banners/system/Wadakpally (1).png"
-           data-mobile="images/banners/mobile/wadakaplly.png">
-        <img class="hc-slide-img" src="images/banners/system/Wadakpally (1).png" alt="Mantoor Group Banner" />
-      </div>
-      <div class="hc-slide"
-           data-desktop="images/banners/system/Chitkul (1).png"
-           data-mobile="images/banners/mobile/chitkull.png">
-        <img class="hc-slide-img" src="images/banners/system/Chitkul (1).png" alt="Mantoor Group Banner" />
-      </div>
-    </div>
-    <div class="hc-overlay"></div>
-    <button class="hc-btn hc-prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
-    <button class="hc-btn hc-next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
-    <div class="hc-dots"></div>
-  </section>
+      <div class="hc-overlay"></div>
+      <button class="hc-btn hc-prev" aria-label="Previous slide">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="hc-btn hc-next" aria-label="Next slide">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="hc-dots"></div>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════
        SECTION 2: ABOUT US
   ═══════════════════════════════════════════════ -->
-  <section class="about-section" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-visual reveal-left">
-          <div class="about-img-frame">
-            <div class="about-img-fill"></div>
-          </div>
-          <div class="about-badge-float">
-            <span class="badge-num">15+</span>
-            <span class="badge-text">Years of<br/>Trust</span>
-          </div>
-          <div class="about-dots"></div>
-        </div>
-
-        <div class="about-content reveal-right">
-          <span class="section-label">Who We Are</span>
-          <h2 class="section-title">Building Legacies,<br />One Home at a Time</h2>
-          <p class="section-desc">
-            At Mantoor Group, we believe a home is more than four walls — it's the foundation of your family's story. For over 15 years, we've been Hyderabad's trusted name in premium villa development, crafting residences that blend architectural elegance with modern comfort.
-          </p>
-          <p class="section-desc">
-            Every villa we build reflects our commitment to integrity, quality craftsmanship, and long-term relationships with the families we serve. From Wadakpally to Chitkul, our projects are thoughtfully placed in well-connected, green neighbourhoods across Hyderabad.
-          </p>
-
-          <div class="about-stats-grid">
-            <div class="about-stat reveal">
-              <span class="astat-num" data-target="15">0</span><span>+</span>
-              <p>Years in Real Estate</p>
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal-left">
+            <div class="about-img-frame">
+              <div class="about-img-fill"></div>
             </div>
-            <div class="about-stat reveal">
-              <span class="astat-num" data-target="4">0</span>
-              <p>Active Projects</p>
+            <div class="about-badge-float">
+              <span class="badge-num">15+</span>
+              <span class="badge-text">Years of<br />Trust</span>
             </div>
-            <div class="about-stat reveal">
-              <span class="astat-num" data-target="8">0</span><span>+</span>
-              <p>Projects Delivered</p>
-            </div>
-            <div class="about-stat reveal">
-              <span class="astat-num" data-target="3200">0</span><span>+</span>
-              <p>Happy Families</p>
-            </div>
+            <div class="about-dots"></div>
           </div>
 
+          <div class="about-content reveal-right">
+            <span class="section-label">Who We Are</span>
+            <h2 class="section-title">
+              Building Legacies,<br />One Home at a Time
+            </h2>
+            <p class="section-desc">
+              At Mantoor Group, we believe a home is more than four walls — it's
+              the foundation of your family's story. For over 15 years, we've
+              been Hyderabad's trusted name in premium villa development,
+              crafting residences that blend architectural elegance with modern
+              comfort.
+            </p>
+            <p class="section-desc">
+              Every villa we build reflects our commitment to integrity, quality
+              craftsmanship, and long-term relationships with the families we
+              serve. From Wadakpally to Chitkul, our projects are thoughtfully
+              placed in well-connected, green neighbourhoods across Hyderabad.
+            </p>
+
+            <div class="about-stats-grid">
+              <div class="about-stat reveal">
+                <span class="astat-num" data-target="15">0</span><span>+</span>
+                <p>Years in Real Estate</p>
+              </div>
+              <div class="about-stat reveal">
+                <span class="astat-num" data-target="4">0</span>
+                <p>Active Projects</p>
+              </div>
+              <div class="about-stat reveal">
+                <span class="astat-num" data-target="8">0</span><span>+</span>
+                <p>Projects Delivered</p>
+              </div>
+              <div class="about-stat reveal">
+                <span class="astat-num" data-target="3200">0</span
+                ><span>+</span>
+                <p>Happy Families</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════
        SECTION 3: ONGOING PROJECTS
   ═══════════════════════════════════════════════ -->
-  <section class="projects-section" id="projects">
-    <div class="projects-glow-left"></div>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Currently Available</span>
-        <h2 class="section-title">Our Ongoing Projects</h2>
-        <p class="section-subtitle">Premium villa communities designed for families who value space, serenity, and a connected lifestyle.</p>
+    <section class="projects-section" id="projects">
+      <div class="projects-glow-left"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Currently Available</span>
+          <h2 class="section-title">Our Ongoing Projects</h2>
+          <p class="section-subtitle">
+            Premium villa communities designed for families who value space,
+            serenity, and a connected lifestyle.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-card-img">
+              <div
+                class="project-img-bg"
+                style="
+                  background-image: url(&quot;images/home-ongoing-projects/emerald.jpeg&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-badge-tag">Triplex Villas</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-meta">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Wadakpally – Beeramguda, Hyderabad</span>
+              </div>
+              <h3 class="project-card-title">Nandan Emerald</h3>
+              <p class="project-card-desc">
+                Spacious triplex villas nestled in the lush greens of
+                Wadakpally, offering generous floor plans, premium finishes, and
+                a community built for multigenerational living.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-home"></i> Triplex</span>
+                <span><i class="fas fa-tree"></i> Premium Community</span>
+                <span><i class="fas fa-car"></i> Car Parking</span>
+              </div>
+              <a href="pages/nandan-emerald.html" class="project-cta"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card-img">
+              <div
+                class="project-img-bg"
+                style="
+                  background-image: url(&quot;images/home-ongoing-projects/nest.jpeg&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-badge-tag">Simplex Villas</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-meta">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Chitkul, Hyderabad</span>
+              </div>
+              <h3 class="project-card-title">Nandan Nest</h3>
+              <p class="project-card-desc">
+                Elegantly compact simplex villas at Chitkul, ideal for young
+                families and first-time homebuyers seeking a peaceful sanctuary
+                without compromise on quality.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-home"></i> Simplex</span>
+                <span><i class="fas fa-tree"></i> Gated Community</span>
+                <span><i class="fas fa-car"></i> Car Parking</span>
+              </div>
+              <a href="pages/nandan-nest.html" class="project-cta"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card-img">
+              <div class="project-img-bg proj-bg-3"></div>
+              <div class="project-badge-tag">Duplex Villas</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-meta">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Chitkul, Hyderabad</span>
+              </div>
+              <h3 class="project-card-title">Nandan Lake Breeze</h3>
+              <p class="project-card-desc">
+                Wake up to serene open views every day. These stunning duplex
+                villas at Chitkul offer a rare blend of natural serenity, modern
+                architecture, and a premium community lifestyle.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-home"></i> Duplex</span>
+                <span><i class="fas fa-water"></i> Scenic Views</span>
+                <span><i class="fas fa-car"></i> Car Parking</span>
+              </div>
+              <a href="pages/nandan-lake-breeze.html" class="project-cta"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card-img">
+              <div
+                class="project-img-bg"
+                style="
+                  background-image: url(&quot;images/home-ongoing-projects/mukunda.jpeg&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-badge-tag">Triplex Villas</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-meta">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Velmala, Hyderabad</span>
+              </div>
+              <h3 class="project-card-title">Mantoor Mukunda</h3>
+              <p class="project-card-desc">
+                A landmark villa township at Velmala — offering spacious triplex
+                villas for families seeking luxury, generous living, and the
+                prestige of the Mantoor legacy.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-home"></i> Triplex</span>
+                <span><i class="fas fa-tree"></i> Gated Community</span>
+                <span><i class="fas fa-car"></i> Car Parking</span>
+              </div>
+              <a href="pages/mantoor-mukunda.html" class="project-cta"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-card-img">
+              <img
+                src="../images/ongoing-projects/nandan-emerald-img-1.jpeg"
+                alt="Praakrithi County Villas"
+              />
+              <div class="project-badge-tag">New Launch</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-meta">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Rameshwar Banda, Beeramguda</span>
+              </div>
+              <h3 class="project-card-title">Praakrithi County Villas</h3>
+              <p class="project-card-desc">
+                A prestigious gated community crafted for refined living —
+                elegant triplex villas across 13 acres, with east &amp; west
+                facing options starting from 2,500 sq.ft. Only 195 exclusive
+                units at a special introductory price.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-home"></i> Triplex</span>
+                <span><i class="fas fa-tree"></i> 13 Acres</span>
+                <span><i class="fas fa-compass"></i> East &amp; West</span>
+              </div>
+              <a href="pages/praakrithi-county.html" class="project-cta"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-cta-row reveal">
+          <a href="pages/ongoing.html" class="btn-outline-white"
+            >View All Ongoing Projects</a
+          >
+          <a href="pages/completed.html" class="btn-ghost"
+            >See Completed Projects</a
+          >
+        </div>
       </div>
+    </section>
 
-      <div class="projects-grid">
-
-        <div class="project-card reveal">
-          <div class="project-card-img">
-            <div class="project-img-bg" style="background-image:url('images/home-ongoing-projects/emerald.jpeg');background-size:cover;background-position:center;"></div>
-            <div class="project-badge-tag">Triplex Villas</div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-meta">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Wadakpally – Beeramguda, Hyderabad</span>
-            </div>
-            <h3 class="project-card-title">Nandan Emerald</h3>
-            <p class="project-card-desc">Spacious triplex villas nestled in the lush greens of Wadakpally, offering generous floor plans, premium finishes, and a community built for multigenerational living.</p>
-            <div class="project-features">
-              <span><i class="fas fa-home"></i> Triplex</span>
-              <span><i class="fas fa-tree"></i> Premium Community</span>
-              <span><i class="fas fa-car"></i> Car Parking</span>
-            </div>
-            <a href="pages/nandan-emerald.html" class="project-cta">View Project <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-card-img">
-            <div class="project-img-bg" style="background-image:url('images/home-ongoing-projects/nest.jpeg');background-size:cover;background-position:center;"></div>
-            <div class="project-badge-tag">Simplex Villas</div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-meta">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Chitkul, Hyderabad</span>
-            </div>
-            <h3 class="project-card-title">Nandan Nest</h3>
-            <p class="project-card-desc">Elegantly compact simplex villas at Chitkul, ideal for young families and first-time homebuyers seeking a peaceful sanctuary without compromise on quality.</p>
-            <div class="project-features">
-              <span><i class="fas fa-home"></i> Simplex</span>
-              <span><i class="fas fa-tree"></i> Gated Community</span>
-              <span><i class="fas fa-car"></i> Car Parking</span>
-            </div>
-            <a href="pages/nandan-nest.html" class="project-cta">View Project <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-card-img">
-            <div class="project-img-bg proj-bg-3"></div>
-            <div class="project-badge-tag">Duplex Villas</div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-meta">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Chitkul, Hyderabad</span>
-            </div>
-            <h3 class="project-card-title">Nandan Lake Breeze</h3>
-            <p class="project-card-desc">Wake up to serene open views every day. These stunning duplex villas at Chitkul offer a rare blend of natural serenity, modern architecture, and a premium community lifestyle.</p>
-            <div class="project-features">
-              <span><i class="fas fa-home"></i> Duplex</span>
-              <span><i class="fas fa-water"></i> Scenic Views</span>
-              <span><i class="fas fa-car"></i> Car Parking</span>
-            </div>
-            <a href="pages/nandan-lake-breeze.html" class="project-cta">View Project <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-card-img">
-            <div class="project-img-bg" style="background-image:url('images/home-ongoing-projects/mukunda.jpeg');background-size:cover;background-position:center;"></div>
-            <div class="project-badge-tag">Triplex Villas</div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-meta">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Velmala, Hyderabad</span>
-            </div>
-            <h3 class="project-card-title">Mantoor Mukunda</h3>
-            <p class="project-card-desc">A landmark villa township at Velmala — offering spacious triplex villas for families seeking luxury, generous living, and the prestige of the Mantoor legacy.</p>
-            <div class="project-features">
-              <span><i class="fas fa-home"></i> Triplex</span>
-              <span><i class="fas fa-tree"></i> Gated Community</span>
-              <span><i class="fas fa-car"></i> Car Parking</span>
-            </div>
-            <a href="pages/mantoor-mukunda.html" class="project-cta">View Project <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="projects-cta-row reveal">
-        <a href="pages/ongoing.html" class="btn-outline-white">View All Ongoing Projects</a>
-        <a href="pages/completed.html" class="btn-ghost">See Completed Projects</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════
        SECTION 4: OUR VALUES
   ═══════════════════════════════════════════════ -->
-  <section class="values-section" id="values">
-    <div class="values-bg-shape"></div>
-    <div class="values-bg-shape-2"></div>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">What We Stand For</span>
-        <h2 class="section-title">Built on Values.<br />Trusted by Families.</h2>
-        <p class="section-subtitle">Every brick we lay, every relationship we build — guided by principles that have defined Mantoor Group for over 15 years.</p>
-      </div>
+    <section class="values-section" id="values">
+      <div class="values-bg-shape"></div>
+      <div class="values-bg-shape-2"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What We Stand For</span>
+          <h2 class="section-title">
+            Built on Values.<br />Trusted by Families.
+          </h2>
+          <p class="section-subtitle">
+            Every brick we lay, every relationship we build — guided by
+            principles that have defined Mantoor Group for over 15 years.
+          </p>
+        </div>
 
-      <div class="values-grid">
-        <div class="value-card reveal">
-          <div class="value-icon">
-            <i class="fas fa-handshake"></i>
+        <div class="values-grid">
+          <div class="value-card reveal">
+            <div class="value-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Integrity First</h3>
+            <p>
+              We believe trust is the strongest foundation. Every commitment we
+              make — from timelines to construction quality — we keep. No hidden
+              costs, no compromises.
+            </p>
           </div>
-          <h3>Integrity First</h3>
-          <p>We believe trust is the strongest foundation. Every commitment we make — from timelines to construction quality — we keep. No hidden costs, no compromises.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">
-            <i class="fas fa-users"></i>
+          <div class="value-card reveal">
+            <div class="value-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Customer at the Centre</h3>
+            <p>
+              Your dream home is unique. We listen, we customise, and we go the
+              extra mile to deliver spaces that truly feel like yours — from the
+              first site visit to final handover.
+            </p>
           </div>
-          <h3>Customer at the Centre</h3>
-          <p>Your dream home is unique. We listen, we customise, and we go the extra mile to deliver spaces that truly feel like yours — from the first site visit to final handover.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">
-            <i class="fas fa-medal"></i>
+          <div class="value-card reveal">
+            <div class="value-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Uncompromising Quality</h3>
+            <p>
+              Premium materials, skilled craftsmen, and rigorous quality checks
+              at every stage — because the home you move into should be even
+              better than what you imagined.
+            </p>
           </div>
-          <h3>Uncompromising Quality</h3>
-          <p>Premium materials, skilled craftsmen, and rigorous quality checks at every stage — because the home you move into should be even better than what you imagined.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">
-            <i class="fas fa-clock"></i>
+          <div class="value-card reveal">
+            <div class="value-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Reliability &amp; Transparency</h3>
+            <p>
+              We deliver on our promises — on time, every time. Real-time
+              updates, verified documentation, and complete transparency keep
+              you informed throughout your journey.
+            </p>
           </div>
-          <h3>Reliability &amp; Transparency</h3>
-          <p>We deliver on our promises — on time, every time. Real-time updates, verified documentation, and complete transparency keep you informed throughout your journey.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">
-            <i class="fas fa-leaf"></i>
+          <div class="value-card reveal">
+            <div class="value-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Sustainable Living</h3>
+            <p>
+              Our communities are planned with green spaces, eco-friendly
+              practices, and sustainable design principles that respect nature
+              while enhancing your living experience.
+            </p>
           </div>
-          <h3>Sustainable Living</h3>
-          <p>Our communities are planned with green spaces, eco-friendly practices, and sustainable design principles that respect nature while enhancing your living experience.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">
-            <i class="fas fa-shield-alt"></i>
+          <div class="value-card reveal">
+            <div class="value-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Long-Term Relationships</h3>
+            <p>
+              We don't just build homes — we build lifelong relationships. Our
+              after-sales support and community engagement make every Mantoor
+              homeowner part of our family.
+            </p>
           </div>
-          <h3>Long-Term Relationships</h3>
-          <p>We don't just build homes — we build lifelong relationships. Our after-sales support and community engagement make every Mantoor homeowner part of our family.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════
        SECTION 5: TESTIMONIALS
   ═══════════════════════════════════════════════ -->
-  <section class="testimonials-section" id="testimonials">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Happy Homeowners</span>
-        <h2 class="section-title">3,200+ Families.<br />One Shared Experience.</h2>
-        <p class="section-subtitle">Don't take our word for it — hear from the families who now call a Mantoor villa their home.</p>
-      </div>
-
-      <div class="testimonials-slider" id="testimonialsSlider">
-        <div class="testimonials-viewport">
-        <div class="testimonials-track" id="testimonialsTrack">
-
-          <div class="testimonial-card">
-            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-            <p>"We were looking for a home that matched our lifestyle — spacious, well-located, and within budget. Nandan Lake Breeze exceeded every expectation. The open view from our living room is simply breathtaking."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">RK</div>
-              <div>
-                <strong>Rajesh Kumar Reddy</strong>
-                <span>Nandan Lake Breeze, Chitkul</span>
-              </div>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-            <p>"Mantoor Group's transparency throughout the entire buying process gave us complete peace of mind. From documentation to possession — they were professional and prompt. Highly recommend!"</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">PS</div>
-              <div>
-                <strong>Priya Subramaniam</strong>
-                <span>Nandan Nest, Chitkul</span>
-              </div>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-            <p>"We purchased a triplex villa in Nandan Emerald for our joint family. The space planning is brilliant — everyone has their privacy yet we're together. The quality of construction is exceptional."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">VN</div>
-              <div>
-                <strong>Venkat Narasimha Rao</strong>
-                <span>Nandan Emerald, Beeramguda</span>
-              </div>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-            <p>"My parents wanted a home in a calm green neighbourhood. Mantoor delivered exactly that — Nandan Serenity was every bit as peaceful as the name promises. Five stars all the way!"</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">AM</div>
-              <div>
-                <strong>Anitha Murali Krishna</strong>
-                <span>Nandan Serenity, Hyderabad</span>
-              </div>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-            <p>"The team at Mantoor Group is professional, responsive and genuinely caring. They helped us choose the right configuration for our family's needs. We couldn't be happier with Mantoor Mukunda."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">SK</div>
-              <div>
-                <strong>Suresh Kumar Sharma</strong>
-                <span>Mantoor Mukunda, Velmala</span>
-              </div>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-            <p>"From the very first site visit to getting our keys, the Mantoor team never left us guessing. The villa is exactly as promised — beautifully finished, spacious, and in a thriving premium community. Worth every rupee."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">LR</div>
-              <div>
-                <strong>Lakshmi Raghunathan</strong>
-                <span>Nandan Emerald, Beeramguda</span>
-              </div>
-              <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        </div><!-- /.testimonials-viewport -->
-
-        <div class="slider-controls">
-          <button class="slider-btn" id="prevBtn"><i class="fas fa-arrow-left"></i></button>
-          <div class="slider-dots" id="sliderDots"></div>
-          <button class="slider-btn" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════
-       SECTION 6: CONTACT FORM
-  ═══════════════════════════════════════════════ -->
-  <section class="contact-section" id="contact">
-    <div class="contact-bg-pattern"></div>
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info reveal-left">
-          <span class="section-label">Let's Talk</span>
-          <h2 class="section-title">Your Dream Home<br />is One Step Away</h2>
-          <p class="section-desc">Our team of experts is ready to help you find the perfect villa. Share your details and we'll reach out within 24 hours with a personalised consultation — completely free.</p>
-
-          <div class="contact-details">
-            <div class="contact-detail-item">
-              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div>
-                <strong>Our Office</strong>
-                <span>4th Floor, The District, Myscape Rd,<br />Financial District, Nanakramguda,<br />Telangana 500032</span>
-              </div>
-            </div>
-            <div class="contact-detail-item">
-              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-              <div>
-                <strong>Call Us</strong>
-                <span><a href="tel:+919719715225">+91 97197 15225</a></span>
-              </div>
-            </div>
-            <div class="contact-detail-item">
-              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-              <div>
-                <strong>Email Us</strong>
-                <span><a href="mailto:info@mantoorgroup.com">info@mantoorgroup.com</a></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-social">
-            <a href="https://facebook.com/mantoorgrouphyd" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://instagram.com/mantoor.group/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/MantoorGroupHyd" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://linkedin.com/company/mantoorgroup/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Happy Homeowners</span>
+          <h2 class="section-title">
+            3,200+ Families.<br />One Shared Experience.
+          </h2>
+          <p class="section-subtitle">
+            Don't take our word for it — hear from the families who now call a
+            Mantoor villa their home.
+          </p>
         </div>
 
-        <div class="contact-form-wrapper reveal-right">
-          <form class="contact-form" id="contactForm" novalidate>
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Eg. Rajesh Reddy" required />
-              <span class="form-error" id="nameError"></span>
+        <div class="testimonials-slider" id="testimonialsSlider">
+          <div class="testimonials-viewport">
+            <div class="testimonials-track" id="testimonialsTrack">
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                  "We were looking for a home that matched our lifestyle —
+                  spacious, well-located, and within budget. Nandan Lake Breeze
+                  exceeded every expectation. The open view from our living room
+                  is simply breathtaking."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">RK</div>
+                  <div>
+                    <strong>Rajesh Kumar Reddy</strong>
+                    <span>Nandan Lake Breeze, Chitkul</span>
+                  </div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                  "Mantoor Group's transparency throughout the entire buying
+                  process gave us complete peace of mind. From documentation to
+                  possession — they were professional and prompt. Highly
+                  recommend!"
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">PS</div>
+                  <div>
+                    <strong>Priya Subramaniam</strong>
+                    <span>Nandan Nest, Chitkul</span>
+                  </div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                  "We purchased a triplex villa in Nandan Emerald for our joint
+                  family. The space planning is brilliant — everyone has their
+                  privacy yet we're together. The quality of construction is
+                  exceptional."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">VN</div>
+                  <div>
+                    <strong>Venkat Narasimha Rao</strong>
+                    <span>Nandan Emerald, Beeramguda</span>
+                  </div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                  "My parents wanted a home in a calm green neighbourhood.
+                  Mantoor delivered exactly that — Nandan Serenity was every bit
+                  as peaceful as the name promises. Five stars all the way!"
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">AM</div>
+                  <div>
+                    <strong>Anitha Murali Krishna</strong>
+                    <span>Nandan Serenity, Hyderabad</span>
+                  </div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                  "The team at Mantoor Group is professional, responsive and
+                  genuinely caring. They helped us choose the right
+                  configuration for our family's needs. We couldn't be happier
+                  with Mantoor Mukunda."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">SK</div>
+                  <div>
+                    <strong>Suresh Kumar Sharma</strong>
+                    <span>Mantoor Mukunda, Velmala</span>
+                  </div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                  "From the very first site visit to getting our keys, the
+                  Mantoor team never left us guessing. The villa is exactly as
+                  promised — beautifully finished, spacious, and in a thriving
+                  premium community. Worth every rupee."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">LR</div>
+                  <div>
+                    <strong>Lakshmi Raghunathan</strong>
+                    <span>Nandan Emerald, Beeramguda</span>
+                  </div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
-              <span class="form-error" id="phoneError"></span>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="you@email.com" required />
-              <span class="form-error" id="emailError"></span>
-            </div>
-            <div class="form-group">
-              <label for="interest">Interested In</label>
-              <select id="interest" name="interest">
-                <option value="">Select a Project</option>
-                <option>Nandan Emerald (Triplex Villas)</option>
-                <option>Nandan Nest (Simplex Villas)</option>
-                <option>Nandan Lake Breeze (Duplex Villas)</option>
-                <option>Mantoor Mukunda (Triplex Villas)</option>
-                <option>Not sure yet — need guidance</option>
-              </select>
-            </div>
-            <button type="submit" class="btn-primary form-submit">
-              <span>Request a Free Callback</span>
+          </div>
+          <!-- /.testimonials-viewport -->
+
+          <div class="slider-controls">
+            <button class="slider-btn" id="prevBtn">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button class="slider-btn" id="nextBtn">
               <i class="fas fa-arrow-right"></i>
             </button>
-            <p class="form-note"><i class="fas fa-lock"></i> Your details are 100% safe. No spam, ever.</p>
-          </form>
-          <div class="form-success" id="formSuccess">
-            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
-            <h3>Thank You!</h3>
-            <p>We've received your details. Our team will reach out within 24 hours with a personalised consultation.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════
-       SECTION 7: FOOTER
+    <!-- ═══════════════════════════════════════════════
+       SECTION 6: CONTACT FORM
   ═══════════════════════════════════════════════ -->
-  <footer class="footer">
-    <div class="footer-top">
+    <section class="contact-section" id="contact">
+      <div class="contact-bg-pattern"></div>
       <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <a href="index.html">
-              <img src="images/mantoor-logo.png" alt="Mantoor Group" class="footer-logo" />
-            </a>
-            <p>Mantoor Infrastructure Pvt. Ltd. is Hyderabad's trusted name in premium residential villa development — building homes where families flourish for over 15 years.</p>
-            <div class="footer-social">
-              <a href="https://facebook.com/mantoorgrouphyd" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://instagram.com/mantoor.group/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="https://x.com/MantoorGroupHyd" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-              <a href="https://linkedin.com/company/mantoorgroup/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <span class="section-label">Let's Talk</span>
+            <h2 class="section-title">Your Dream Home<br />is One Step Away</h2>
+            <p class="section-desc">
+              Our team of experts is ready to help you find the perfect villa.
+              Share your details and we'll reach out within 24 hours with a
+              personalised consultation — completely free.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <strong>Our Office</strong>
+                  <span
+                    >4th Floor, The District, Myscape Rd,<br />Financial
+                    District, Nanakramguda,<br />Telangana 500032</span
+                  >
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <strong>Call Us</strong>
+                  <span><a href="tel:+919719715225">+91 97197 15225</a></span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <strong>Email Us</strong>
+                  <span
+                    ><a href="mailto:info@mantoorgroup.com"
+                      >info@mantoorgroup.com</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a
+                href="https://facebook.com/mantoorgrouphyd"
+                target="_blank"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://instagram.com/mantoor.group/"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://x.com/MantoorGroupHyd"
+                target="_blank"
+                aria-label="Twitter"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://linkedin.com/company/mantoorgroup/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
 
-          <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="pages/about.html">About Us</a></li>
-              <li><a href="pages/ongoing.html">Ongoing Projects</a></li>
-              <li><a href="pages/upcoming.html">Upcoming Projects</a></li>
-              <li><a href="pages/completed.html">Completed Projects</a></li>
-              <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Ongoing Projects</h4>
-            <ul>
-              <li><a href="pages/nandan-emerald.html">Nandan Emerald</a></li>
-              <li><a href="pages/nandan-nest.html">Nandan Nest</a></li>
-              <li><a href="pages/nandan-lake-breeze.html">Nandan Lake Breeze</a></li>
-              <li><a href="pages/mantoor-mukunda.html">Mantoor Mukunda</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Get In Touch</h4>
-            <address>
-              <p><i class="fas fa-map-marker-alt"></i> 4th Floor, The District, Myscape Rd, Financial District, Nanakramguda, Telangana 500032</p>
-              <p><i class="fas fa-phone-alt"></i> <a href="tel:+919719715225">+91 97197 15225</a></p>
-              <p><i class="fas fa-envelope"></i> <a href="mailto:info@mantoorgroup.com">info@mantoorgroup.com</a></p>
-            </address>
+          <div class="contact-form-wrapper reveal-right">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Eg. Rajesh Reddy"
+                  required
+                />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                  required
+                />
+                <span class="form-error" id="phoneError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@email.com"
+                  required
+                />
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="interest">Interested In</label>
+                <select id="interest" name="interest">
+                  <option value="">Select a Project</option>
+                  <option>Praakrithi County Villas (Triplex Villas)</option>
+                  <option>Nandan Emerald (Triplex Villas)</option>
+                  <option>Nandan Nest (Simplex Villas)</option>
+                  <option>Nandan Lake Breeze (Duplex Villas)</option>
+                  <option>Mantoor Mukunda (Triplex Villas)</option>
+                  <option>Not sure yet — need guidance</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-primary form-submit">
+                <span>Request a Free Callback</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <p class="form-note">
+                <i class="fas fa-lock"></i> Your details are 100% safe. No spam,
+                ever.
+              </p>
+            </form>
+            <div class="form-success" id="formSuccess">
+              <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <h3>Thank You!</h3>
+              <p>
+                We've received your details. Our team will reach out within 24
+                hours with a personalised consultation.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; 2025 Mantoor Infrastructure Pvt. Ltd. All Rights Reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
-          <a href="#">Disclaimer</a>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+       SECTION 7: FOOTER
+  ═══════════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="index.html">
+                <img
+                  src="images/mantoor-logo.png"
+                  alt="Mantoor Group"
+                  class="footer-logo"
+                />
+              </a>
+              <p>
+                Mantoor Infrastructure Pvt. Ltd. is Hyderabad's trusted name in
+                premium residential villa development — building homes where
+                families flourish for over 15 years.
+              </p>
+              <div class="footer-social">
+                <a
+                  href="https://facebook.com/mantoorgrouphyd"
+                  target="_blank"
+                  aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://instagram.com/mantoor.group/"
+                  target="_blank"
+                  aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://x.com/MantoorGroupHyd"
+                  target="_blank"
+                  aria-label="Twitter"
+                  ><i class="fab fa-x-twitter"></i
+                ></a>
+                <a
+                  href="https://linkedin.com/company/mantoorgroup/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/ongoing.html">Ongoing Projects</a></li>
+                <li><a href="pages/upcoming.html">Upcoming Projects</a></li>
+                <li><a href="pages/completed.html">Completed Projects</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Ongoing Projects</h4>
+              <ul>
+                <li>
+                  <a href="pages/praakrithi-county.html"
+                    >Praakrithi County Villas</a
+                  >
+                </li>
+                <li><a href="pages/nandan-emerald.html">Nandan Emerald</a></li>
+                <li><a href="pages/nandan-nest.html">Nandan Nest</a></li>
+                <li>
+                  <a href="pages/nandan-lake-breeze.html">Nandan Lake Breeze</a>
+                </li>
+                <li>
+                  <a href="pages/mantoor-mukunda.html">Mantoor Mukunda</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Get In Touch</h4>
+              <address>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 4th Floor, The District,
+                  Myscape Rd, Financial District, Nanakramguda, Telangana 500032
+                </p>
+                <p>
+                  <i class="fas fa-phone-alt"></i>
+                  <a href="tel:+919719715225">+91 97197 15225</a>
+                </p>
+                <p>
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:info@mantoorgroup.com"
+                    >info@mantoorgroup.com</a
+                  >
+                </p>
+              </address>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            &copy; 2025 Mantoor Infrastructure Pvt. Ltd. All Rights Reserved.
+          </p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Disclaimer</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <!-- ═══════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════
        SECTION 8: FLOATING CTA BAR
   ═══════════════════════════════════════════════ -->
-  <div class="floating-cta-bar" id="floatingCta">
-    <a href="tel:+919719715225" class="fcta-item fcta-call">
-      <i class="fas fa-phone-alt"></i>
-      <div class="fcta-text">
-        <span class="fcta-label">Call Us</span>
-        <span class="fcta-value">+91 97197 15225</span>
-      </div>
-    </a>
-    <a href="https://wa.me/919719715225?text=Hi%2C%20I%27m%20interested%20in%20your%20villa%20projects.%20Please%20share%20more%20details." target="_blank" class="fcta-item fcta-whatsapp">
-      <i class="fab fa-whatsapp"></i>
-      <div class="fcta-text">
-        <span class="fcta-label">WhatsApp</span>
-        <span class="fcta-value">Chat with Us</span>
-      </div>
-    </a>
-    <a href="#contact" class="fcta-item fcta-enquire">
-      <i class="fas fa-paper-plane"></i>
-      <div class="fcta-text">
-        <span class="fcta-label">Enquire</span>
-        <span class="fcta-value">Free Callback</span>
-      </div>
-    </a>
-  </div>
+    <div class="floating-cta-bar" id="floatingCta">
+      <a href="tel:+919719715225" class="fcta-item fcta-call">
+        <i class="fas fa-phone-alt"></i>
+        <div class="fcta-text">
+          <span class="fcta-label">Call Us</span>
+          <span class="fcta-value">+91 97197 15225</span>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/919719715225?text=Hi%2C%20I%27m%20interested%20in%20your%20villa%20projects.%20Please%20share%20more%20details."
+        target="_blank"
+        class="fcta-item fcta-whatsapp"
+      >
+        <i class="fab fa-whatsapp"></i>
+        <div class="fcta-text">
+          <span class="fcta-label">WhatsApp</span>
+          <span class="fcta-value">Chat with Us</span>
+        </div>
+      </a>
+      <a href="#contact" class="fcta-item fcta-enquire">
+        <i class="fas fa-paper-plane"></i>
+        <div class="fcta-text">
+          <span class="fcta-label">Enquire</span>
+          <span class="fcta-value">Free Callback</span>
+        </div>
+      </a>
+    </div>
 
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

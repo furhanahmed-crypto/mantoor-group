@@ -115,6 +115,20 @@
   color: var(--color-primary-dark, #1a4060);
 }
 
+/* Empty-src placeholders — show alt text until project images are added */
+img[src=""] {
+  background: #e8e4df;
+  object-fit: contain;
+  text-align: center;
+}
+.inner-hero > img[src=""] {
+  background: #1a2840;
+}
+.gallery-main img[src=""],
+.gallery-thumb img[src=""] {
+  background: #e8e4df;
+}
+
 /* ─── INNER HERO — LIGHT VARIANT (Upcoming / Completed) ─── */
 /* Base color: #A69080 (warm taupe). Tints derived: 90%→#EEE7E2, 70%→#D4C5BB, full→#A69080 */
 .inner-hero--light {
