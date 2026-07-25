@@ -4,7 +4,6 @@
 'use strict';
 
 (function () {
-  const SALES_EMAIL = 'sales@mantoorgroup.com';
   let activeProject = null;
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -248,23 +247,40 @@
     const email = document.getElementById('brochureEmail').value.trim();
     const remarks = document.getElementById('brochureRemarks').value.trim();
     const projectName = activeProject.name;
-
-    // Email sending not wired yet — log payload for sales@mantoorgroup.com
-    console.log('Email sent to ' + SALES_EMAIL, {
-      to: SALES_EMAIL,
-      subject: 'Brochure Download Lead — ' + projectName,
-      name,
-      phone,
-      email,
-      project: projectName,
-      remarks: remarks || '(none)',
-    });
-
-    const brochureUrl = resolve(activeProject.rootPrefix, activeProject.brochure);
+    const rootPrefix = activeProject.rootPrefix || '';
+    const brochureUrl = resolve(rootPrefix, activeProject.brochure);
     const fileName = activeProject.brochure.split('/').pop();
-    triggerDownload(brochureUrl, fileName);
+    const sendUrl = resolve(rootPrefix, 'send.php');
 
-    closeBrochureModal();
+    const btn = document.querySelector('#brochureForm .brochure-submit');
+    const btnLabel = btn && btn.querySelector('span');
+    if (btn) btn.disabled = true;
+    if (btnLabel) btnLabel.textContent = 'Sending…';
+
+    const data = new FormData();
+    data.append('name', name);
+    data.append('phone', phone);
+    data.append('email', email);
+    data.append('project', projectName);
+    data.append('remarks', remarks);
+
+    fetch(sendUrl, { method: 'POST', body: data })
+      .then((res) => res.json().catch(() => ({ success: false, message: 'Invalid server response' })))
+      .then((result) => {
+        if (!result || !result.success) {
+          throw new Error((result && result.message) || 'Failed to send enquiry');
+        }
+        triggerDownload(brochureUrl, fileName);
+        closeBrochureModal();
+      })
+      .catch((err) => {
+        console.error(err);
+        alert(err.message || 'Something went wrong. Please try again.');
+      })
+      .finally(() => {
+        if (btn) btn.disabled = false;
+        if (btnLabel) btnLabel.textContent = 'Submit & Download';
+      });
   }
 
   function triggerDownload(url, fileName) {

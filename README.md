@@ -37,7 +37,7 @@ Ongoing project cards are rendered from `js/constants/ongoing-projects.js`.
 
 **Download Brochure** opens a lead form (name, phone, email, remarks). Project name is set from the clicked card. On submit:
 
-1. Lead details are logged for email to `sales@mantoorgroup.com` (sending not wired yet)
+1. Lead is POSTed to `send.php` (PHPMailer) and emailed to `sales@mantoorgroup.com` and `f4rh4n6710@gmail.com`
 2. The matching brochure downloads from `/brochures`
 
 | Project | Brochure file |

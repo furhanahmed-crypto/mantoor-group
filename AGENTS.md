@@ -11,7 +11,7 @@ A static marketing site for Mantoor Group (villa real estate, Hyderabad). Prefer
 - Keep changes scoped to the request; avoid drive-by refactors
 - Reuse existing CSS variables, button classes, and section patterns from `css/style.css` / `css/inner.css`
 - Put reusable project data in `js/constants/` and render with JS when lists are repeated
-- Keep brochure lead capture in `js/brochure.js`; do not add real email/API sending unless asked
+- Keep brochure lead capture in `js/brochure.js`; email delivery goes through root `send.php` (PHPMailer)
 - Use relative paths carefully: root pages vs `pages/` (prefix with `../` when needed)
 - Preserve brand colours, fonts, and layout language documented in `DESIGN.md`
 
