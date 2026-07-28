@@ -30,13 +30,12 @@ if (
     $mail->Host       = 'smtp.gmail.com';
     $mail->Port       = 587;
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Username   = 'sales@mantoorgroup.com';
-    $mail->Password   = 'REPLACE_WITH_GOOGLE_APP_PASSWORD'; // 16-char App Password from Google Account
+    $mail->Username   = 'test.mantoorgroup@gmail.com';
+    $mail->Password   = 'msjj yamp jxlj wbvt'; // 16-char App Password from Google Account
 
-    $mail->From = 'sales@mantoorgroup.com';
+    $mail->From = 'test.mantoorgroup@gmail.com';
     $mail->FromName = 'Mantoor Group';
     $mail->AddAddress('sales@mantoorgroup.com');
-    $mail->AddAddress('f4rh4n6710@gmail.com');
 
     $mail->Subject = $project . ' brochure downloaded';
     $mail->WordWrap = 80;
