@@ -95,6 +95,27 @@
   font-weight: 500;
 }
 .inner-hero-meta i { color: var(--color-gold-lt); font-size: 0.85rem; }
+.inner-hero-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.project-brochure-btn--light {
+  color: var(--color-primary);
+  background: rgba(123, 45, 94, 0.08);
+  border-color: rgba(123, 45, 94, 0.22);
+}
+.project-brochure-btn--light:hover {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+.sidebar-brochure-btn {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 .inner-hero-meta .rera-link {
   color: var(--color-gold-lt);
   text-decoration: underline;

@@ -88,17 +88,27 @@
 
   function bindBrochureTriggers() {
     document.addEventListener('click', (e) => {
-      const btn = e.target.closest('[data-project-id].project-brochure-btn, .project-brochure-btn[data-project-id]');
+      const btn = e.target.closest('.project-brochure-btn[data-project-id]');
       if (!btn) return;
       e.preventDefault();
       const id = btn.dataset.projectId;
       const project = (window.ONGOING_PROJECTS || []).find((p) => p.id === id);
       if (!project) return;
 
-      const grid = btn.closest('#ongoingProjectsGrid') || document.querySelector('#ongoingProjectsGrid');
-      const rootPrefix = rootPrefixFrom(grid);
+      const rootPrefix = resolveTriggerRootPrefix(btn);
       openBrochureModal(project, rootPrefix);
     });
+  }
+
+  function resolveTriggerRootPrefix(btn) {
+    if (btn.hasAttribute('data-root-prefix')) {
+      return btn.getAttribute('data-root-prefix') || '';
+    }
+    const grid =
+      btn.closest('#ongoingProjectsGrid') ||
+      document.querySelector('#ongoingProjectsGrid');
+    if (grid) return rootPrefixFrom(grid);
+    return '../';
   }
 
   /* ── Modal markup ── */

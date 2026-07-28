@@ -24,14 +24,14 @@ if (
 
     $mail = new PHPMailer(true);
 
+    // Google Workspace SMTP (MX points to Google — use App Password, not cPanel)
     $mail->IsSMTP();
-    $mail->SMTPAuth = false;
-    $mail->Port = 25;
-    $mail->Host = 'localhost';
-    $mail->Username = 'sales@mantoorgroup.com';
-    $mail->Password = 'sales@mantoor';
-
-    $mail->IsSendmail();
+    $mail->SMTPAuth   = true;
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->Port       = 587;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Username   = 'sales@mantoorgroup.com';
+    $mail->Password   = 'REPLACE_WITH_GOOGLE_APP_PASSWORD'; // 16-char App Password from Google Account
 
     $mail->From = 'sales@mantoorgroup.com';
     $mail->FromName = 'Mantoor Group';
